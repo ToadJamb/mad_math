@@ -17,12 +17,11 @@ module MadMath
       @sum_of_squares ||= squares_with_max_loop
     end
 
-    # #reduce with the symbol (non-block form) is most performant
+    # #reduce with the symbol (non-block form) seems most performant
     def sum
       @sum ||= @data.reduce(:+)
     end
 
-    # #size appears to be most performant
     def count
       @count ||= @data.size
     end
