@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 require_relative '../lib/mad_math'
+require_relative '../lib/mad_math/all'
 
 base = File.expand_path(File.dirname(__FILE__))
 path = File.join(base, 'support')
