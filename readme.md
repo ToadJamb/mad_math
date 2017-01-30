@@ -32,6 +32,63 @@ Require
     $ require 'mad_math'
 
 
+Classes/Modules
+---------------
+
+To require all classes/modules included in `MadMath`,
+require all of them:
+
+		require 'mad_math/all'
+
+
+### Stats
+
+`Stats` is required by default.
+
+Basic usage as follows:
+
+```
+stats = MadMath::Stats.new([1, 2, 3, 4])
+stats.load #=> Runs all calculations and caches the values
+stats.average #=> 2.5
+```
+
+The following methods are available on an instance of `Stats`:
+
+* `load`
+	* calculates all values and caches them
+	* this is the same as calling `stdev`
+* `average`
+	* this is the mean value
+* `sum`
+* `count`
+* `stdev`
+	* standard deviation
+* `stdevp`
+	* population standard deviation
+* `max`
+* `min`
+
+
+NewtonPolynomial
+----------------
+
+To use this, you must either require all classes or require it specifically.
+The assumption is that few users will be utilizing that class.
+
+		require 'mad_math/newton_polynomial'
+
+Data is passed in as an array of arrays
+and may be appended to by using `#add`:
+
+```
+# y = x ** 2 + 1
+np = MadMath::NewtonPolynomial.new([[1, 2], [2, 5], [3, 10]])
+np.add 4, 17
+np.value_for 5 #=> 26.0
+```
+
+
 Gemfile.lock
 ------------
 
