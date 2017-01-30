@@ -85,3 +85,4 @@ RSpec.describe MadMath::Stats do
     it_behaves_like 'sum of squares', [7, 1, 3], 18.666
   end
 end
+
