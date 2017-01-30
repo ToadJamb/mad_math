@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 Gem::Specification.new do |spec|
   spec.name        = 'mad_math'
-  spec.version     = '0.0.1'
+  spec.version     = '0.0.2'
   spec.authors     = ['Travis Herrick']
   spec.email       = ['tthetoad@gmail.com']
   spec.summary     = 'Basic statistical functions'
