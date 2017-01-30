@@ -70,7 +70,7 @@ It is much harder to get something working if you have no idea
 what a good starting point is
 or even whether it was expected to work at some point
 (maybe the test suite was failing when it was abandoned).
-The point is that it very difficult to know the difference
+The point is that it is very difficult to know the difference
 without a Gemfile.lock.
 
 This is one of the dumbest things we do.
